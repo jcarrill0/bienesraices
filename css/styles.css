@@ -1,0 +1,187 @@
+:root {
+    --primario: #71b100;
+    --secundario: #e08709;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 300;	
+}
+
+h1 {
+	font-size: 2.6rem;
+}
+
+h2 {
+	font-size: 2.1rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
+.bg-success,
+.btn-success {
+	background-color: var(--primario) !important;
+}
+
+.btn-warning {
+	background-color: var(--secundario) !important;
+}
+
+.btn-warning:hover {
+	color: white !important;
+	background-color: #e0a800 !important;
+}
+
+/* Header */
+.nav-principal{
+		background-color: var(--primario) !important;
+}
+
+@media (min-width: 768px) {
+	.nav-principal {
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.nav-principal{
+		background-color: transparent !important;
+	}
+}
+
+.nav-principal .navbar-brand {
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.nav-principal .navbar-brand span {
+	font-weight: 900;
+}
+
+.nav-principal .nav-link,
+.nav-principal .dropdown-item {
+	color: white !important;
+	text-transform: uppercase;
+	font-size: .8rem;
+}
+
+.nav-principal .dropdown-item:hover {
+	background-color: var(--secundario);
+}
+
+.hero-slider p {
+	font-size: 1.3rem;
+}
+
+.hero-slider .precio {
+	font-size: 1.5rem;
+}
+
+.hero-slider .btn-warning {
+	font-weight: 700;
+}
+
+/* Nosotros */
+
+.nosotros h4 {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.nosotros .icono {
+	height: 100px;
+	width: 125px;
+	display: inline-block;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.nosotros .seguridad {
+	background-image: url('../img/icono_seguridad.jpg');
+}
+
+.nosotros .precio {
+	background-image: url('../img/icono_precio.jpg');
+}
+
+.nosotros .disponibilidad {
+	background-image: url('../img/icono_disponible.jpg');
+}
+
+/* Anuncios */
+
+.anuncios .card-title {
+	font-weight: 300;
+}
+
+.anuncios .card-precio {
+	color: var(--primario);
+}
+
+.anuncios .card {
+	margin-bottom: 2rem;
+}
+
+.anuncios .card-descripcion img {
+	margin-right: 10px;
+}
+
+/* Contacto */
+
+.contacto {
+	height: 25rem;
+	background-image: url('../img/contacto.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.contacto h3 {
+	font-size: 2.2rem;
+	font-weight: 900;
+}
+
+/* Blog */
+
+.blog h3::after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 33%;
+	background-color: var(--primario);
+	margin-top: .5rem;
+
+}
+
+.blog .meta {
+	color: var(--secundario);
+}
+
+
+/* Testimoniales */
+
+.testimonial p::before {
+	
+}
+
+.testimonial p {
+	font-size: 1.4rem;
+	font-weight: 300;
+	line-height: 2;
+}
+
+.testimonial .blockquote-footer {
+	font-size: 1.4rem;
+	font-weight: 900;
+}
+
+/* Footer */
+
+.footer .nav-link {
+	color: white !important;
+}
